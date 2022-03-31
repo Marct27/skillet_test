@@ -3,7 +3,7 @@
 # unique snippet name
 name: mySkillet
 # label used for menu selection
-label: my_skillet_label
+label: my_skillet_label_v1
 description: this is what my skillet does
 
 # type of device configuration
@@ -11,12 +11,12 @@ description: this is what my skillet does
 # https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
 type: terraform
 # preload static or default-based templates
-extends:
+#extends:
 
 # grouping of like snippets for dynamic menu creation in panhandler
 labels:
   collection:
-    - myCollection
+    - TestCollection
 
 # ---------------------------------------------------------------------
 # end of preamble section
@@ -40,14 +40,14 @@ variables:
         value: option1
       - key: option2
         value: option2
-  - name: snippets
-    type_hint: hidden
-    default: ''
+#  - name: snippets
+#    type_hint: hidden
+#    default: ''
 # ---------------------------------------------------------------------
 # end of variables section
 
 # snippets section
 # ---------------------------------------------------------------------
-snippets:
+#snippets:
 # ---------------------------------------------------------------------
 # end of snippets section
